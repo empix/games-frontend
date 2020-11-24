@@ -23,7 +23,7 @@ export default function ListGames() {
       <Header />
       <section className="list-container">
         {games.map((game) => (
-          <div className="game">
+          <div className="game" key={game.id}>
             <h1 className="title">{game.name}</h1>
             <div className="details">
               <p>
