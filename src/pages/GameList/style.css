@@ -1,0 +1,102 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-container {
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.game {
+  width: 100%;
+  background-color: #333;
+  margin-bottom: 20px;
+  padding: 15px;
+  color: #cacaca;
+  display: grid;
+  grid-template:
+    'title title description description actions' 1fr
+    'details details description description actions' 3fr;
+  gap: 15px;
+}
+
+.game:last-child {
+  margin-bottom: 0;
+}
+
+.game h1,
+.game strong {
+  color: #eee;
+}
+
+.title {
+  grid-area: title;
+}
+
+.details {
+  grid-area: details;
+}
+.details p {
+  margin-bottom: 5px;
+}
+.details p:last-child {
+  margin-bottom: 0;
+}
+
+.description {
+  grid-area: description;
+  border-left: 1px solid #cacaca;
+  border-right: 1px solid #cacaca;
+  padding: 0 15px;
+  text-align: justify;
+}
+
+.actions {
+  grid-area: actions;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.actions button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* .list-container h1 {
+  color: #838383;
+  font-weight: 400;
+  font-size: 1.6em;
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+} */
+
+@media (max-width: 630px) {
+  .game {
+    grid-template:
+      'title' auto
+      'details' auto
+      'description' auto
+      'actions' auto;
+  }
+
+  .description {
+    padding: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .actions {
+    padding: 20px;
+    flex-direction: row;
+  }
+}
