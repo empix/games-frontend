@@ -27,7 +27,8 @@ export default function ListGames() {
             <h1 className="title">{game.name}</h1>
             <div className="details">
               <p>
-                <strong>Release Date:</strong> {game.release_date}
+                <strong>Release Date:</strong> {game.release_date}{' '}
+                {/* Não está sendo mostrado da melhor maneira */}
               </p>
               <p>
                 <strong>Genres:</strong>{' '}
