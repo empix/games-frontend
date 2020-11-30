@@ -27,8 +27,8 @@ export default function ListGames() {
             <h1 className="title">{game.name}</h1>
             <div className="details">
               <p>
-                <strong>Release Date:</strong> {game.release_date}{' '}
-                {/* Não está sendo mostrado da melhor maneira */}
+                <strong>Release Date:</strong>{' '}
+                {new Date(game.release_date).toLocaleDateString()}
               </p>
               <p>
                 <strong>Genres:</strong>{' '}
