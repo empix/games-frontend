@@ -18,10 +18,20 @@ export default function ListGames() {
     });
   }, []);
 
+  async function handleDeleteGame(id) {
+    try {
+      await api.delete(`/games/${id}`);
+
+      setGames(games.filter((game) => game.id !== id));
+    } catch (err) {
+      alert('Ocorreu um erro inesperado!');
+    }
+  }
+
   return (
     <div className="container">
       <Header />
-      <section className="list-container">
+      <section className="content">
         {games.map((game) => (
           <div className="game" key={game.id}>
             <h1 className="title">{game.name}</h1>
@@ -50,7 +60,7 @@ export default function ListGames() {
               <strong>Description:</strong> {game.description}
             </p>
             <div className="actions">
-              <button type="button">
+              <button type="button" onClick={() => handleDeleteGame(game.id)}>
                 <FiTrash2 size={20} color="#eee" />
               </button>
               <button type="button">
