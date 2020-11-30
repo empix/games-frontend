@@ -1,0 +1,42 @@
+.content form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content form .input-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+.content form label {
+  color: #eee;
+}
+
+.content form input,
+.content form textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.content form .action {
+  width: 100%;
+  max-width: 500px;
+  text-align: right;
+}
+
+.content form button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #eee;
+  font-size: 1em;
+  font-weight: 500;
+}
