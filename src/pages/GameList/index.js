@@ -32,18 +32,18 @@ export default function ListGames() {
               </p>
               <p>
                 <strong>Genres:</strong>{' '}
-                {game.genres.map((genre) => genre.name + ', ')}
+                {game.genres.map((genre) => genre.name).join(', ')}
               </p>
               <p>
                 <strong>Engine:</strong> {game.engine.name}
               </p>
               <p>
                 <strong>Developers: </strong>{' '}
-                {game.developers.map((developer) => developer.name + ', ')}
+                {game.developers.map((developer) => developer.name).join(', ')}
               </p>
               <p>
                 <strong>Publishers: </strong>{' '}
-                {game.publishers.map((publisher) => publisher.name + ', ')}
+                {game.publishers.map((publisher) => publisher.name).join(', ')}
               </p>
             </div>
             <p className="description">
