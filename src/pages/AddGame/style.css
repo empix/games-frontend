@@ -30,13 +30,3 @@
   max-width: 500px;
   text-align: right;
 }
-
-.content form button {
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
-  background-color: #eee;
-  font-size: 1em;
-  font-weight: 500;
-}
