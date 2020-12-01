@@ -46,3 +46,12 @@ button {
 button:hover {
   background-color: #d4d4d4;
 }
+
+.not-found {
+  color: #838383;
+  font-weight: 400;
+  font-size: 1.6em;
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+}
