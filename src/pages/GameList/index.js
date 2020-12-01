@@ -45,7 +45,7 @@ export default function ListGames() {
                 {game.genres.map((genre) => genre.name).join(', ')}
               </p>
               <p>
-                <strong>Engine:</strong> {game.engine.name}
+                <strong>Engine:</strong> {game.engine && game.engine.name}
               </p>
               <p>
                 <strong>Developers: </strong>{' '}
