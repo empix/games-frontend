@@ -34,6 +34,9 @@ export default function Header() {
             <li>
               <Link to="/add">Add Game</Link>
             </li>
+            <li>
+              <Link to="/data">Data</Link>
+            </li>
           </ul>
         </nav>
         <FiMenu
