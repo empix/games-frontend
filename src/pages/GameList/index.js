@@ -61,10 +61,10 @@ export default function ListGames() {
             </p>
             <div className="actions">
               <button type="button" onClick={() => handleDeleteGame(game.id)}>
-                <FiTrash2 size={20} color="#eee" />
+                <FiTrash2 size={20} color="#222" />
               </button>
               <button type="button">
-                <FiEdit size={20} color="#eee" />
+                <FiEdit size={20} color="#222" />
               </button>
             </div>
           </div>

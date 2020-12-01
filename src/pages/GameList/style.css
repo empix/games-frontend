@@ -48,11 +48,6 @@
   flex-direction: column;
   justify-content: space-around;
 }
-.actions button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
 
 .not-found {
   color: #838383;
